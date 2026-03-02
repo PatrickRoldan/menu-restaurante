@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú Digital</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+section {
+    padding: 20px;
+}
+.menu-item {
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1ebc57;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Restaurante El Sabor Norteño</h1>
+    <p>¡Pedidos rápidos por WhatsApp!</p>
+</header>
+
+<section>
+
+<div class="menu-item">
+    <h3>Arroz con Pollo</h3>
+    <p>S/ 18</p>
+</div>
+
+<div class="menu-item">
+    <h3>Ceviche Clásico</h3>
+    <p>S/ 25</p>
+</div>
+
+<div class="menu-item">
+    <h3>Pollo Broaster</h3>
+    <p>S/ 20</p>
+</div>
+
+<button onclick="window.location.href='https://wa.me/51999999999'">
+    Hacer Pedido por WhatsApp
+</button>
+
+</section>
+
+</body>
+</html>
