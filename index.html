@@ -3,41 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menú Digital</title>
+<title>Chifa Dragón Dorado</title>
 <style>
-body {
+body{
+    margin:0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f8f8f8;
+    background-color:#f4f4f4;
 }
-header {
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
+header{
+    background:url('https://images.unsplash.com/photo-1604908176997-4313f9c0c2c4') center/cover;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
 }
-section {
-    padding: 20px;
+header h1{
+    margin:0;
+    font-size:32px;
 }
-.menu-item {
-    background: white;
-    margin-bottom: 15px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+header p{
+    font-size:18px;
 }
-button {
-    width: 100%;
-    padding: 15px;
-    background-color: #25D366;
-    color: white;
-    border: none;
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
+.section{
+    padding:20px;
 }
-button:hover {
-    background-color: #1ebc57;
+.category{
+    margin-bottom:30px;
+}
+.category h2{
+    border-bottom:2px solid #c62828;
+    padding-bottom:5px;
+    color:#c62828;
+}
+.item{
+    background:white;
+    margin:10px 0;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    display:flex;
+    justify-content:space-between;
+}
+button{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:90%;
+    padding:18px;
+    background:#25D366;
+    color:white;
+    font-size:18px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+button:hover{
+    background:#1ebc57;
+}
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:white;
 }
 </style>
 </head>
@@ -45,32 +73,58 @@ button:hover {
 <body>
 
 <header>
-    <h1>Restaurante El Sabor Norteño</h1>
-    <p>¡Pedidos rápidos por WhatsApp!</p>
+    <h1>Chifa Dragón Dorado</h1>
+    <p>Auténtico sabor oriental en Trujillo 🍜</p>
 </header>
 
-<section>
+<div class="section">
 
-<div class="menu-item">
-    <h3>Arroz con Pollo</h3>
-    <p>S/ 18</p>
-</div>
+    <div class="category">
+        <h2>🍚 Arroces</h2>
+        <div class="item">
+            <span>Arroz Chaufa Especial</span>
+            <span>S/ 22</span>
+        </div>
+        <div class="item">
+            <span>Arroz Chaufa con Pollo</span>
+            <span>S/ 18</span>
+        </div>
+    </div>
 
-<div class="menu-item">
-    <h3>Ceviche Clásico</h3>
-    <p>S/ 25</p>
-</div>
+    <div class="category">
+        <h2>🥡 Tallarines</h2>
+        <div class="item">
+            <span>Tallarín Saltado de Pollo</span>
+            <span>S/ 20</span>
+        </div>
+        <div class="item">
+            <span>Tallarín con Carne</span>
+            <span>S/ 23</span>
+        </div>
+    </div>
 
-<div class="menu-item">
-    <h3>Pollo Broaster</h3>
-    <p>S/ 20</p>
+    <div class="category">
+        <h2>🥤 Bebidas</h2>
+        <div class="item">
+            <span>Inca Kola 1L</span>
+            <span>S/ 8</span>
+        </div>
+        <div class="item">
+            <span>Chicha Morada</span>
+            <span>S/ 6</span>
+        </div>
+    </div>
+
 </div>
 
 <button onclick="window.location.href='https://wa.me/51999999999'">
-    Hacer Pedido por WhatsApp
+    📲 Hacer Pedido por WhatsApp
 </button>
 
-</section>
+<footer>
+    📍 Trujillo, La Libertad  
+    🕒 Abierto todos los días 12pm - 10pm
+</footer>
 
 </body>
 </html>
