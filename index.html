@@ -4,51 +4,80 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chifa Dragón Dorado</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
+
 body{
     margin:0;
-    font-family: Arial, sans-serif;
-    background-color:#f4f4f4;
-}
-header{
-    background:url('https://images.unsplash.com/photo-1604908176997-4313f9c0c2c4') center/cover;
+    font-family:'Poppins', sans-serif;
+    background:#111;
     color:white;
+}
+
+header{
     text-align:center;
     padding:60px 20px;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1585032226651-759b368d7246');
+    background-size:cover;
+    background-position:center;
 }
+
 header h1{
+    font-size:34px;
     margin:0;
-    font-size:32px;
+    color:#FFD700;
 }
+
 header p{
     font-size:18px;
+    margin-top:10px;
 }
+
 .section{
-    padding:20px;
+    padding:30px 20px;
+    max-width:800px;
+    margin:auto;
 }
+
 .category{
-    margin-bottom:30px;
+    margin-bottom:40px;
 }
+
 .category h2{
-    border-bottom:2px solid #c62828;
-    padding-bottom:5px;
-    color:#c62828;
+    color:#FFD700;
+    border-left:5px solid #c62828;
+    padding-left:10px;
 }
+
 .item{
-    background:white;
-    margin:10px 0;
-    padding:15px;
-    border-radius:10px;
-    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    background:#1c1c1c;
+    margin:12px 0;
+    padding:18px;
+    border-radius:15px;
     display:flex;
     justify-content:space-between;
+    align-items:center;
+    transition:0.3s;
 }
+
+.item:hover{
+    transform:scale(1.03);
+    background:#222;
+}
+
+.price{
+    color:#FFD700;
+    font-weight:600;
+}
+
 button{
     position:fixed;
     bottom:20px;
     left:50%;
     transform:translateX(-50%);
     width:90%;
+    max-width:500px;
     padding:18px;
     background:#25D366;
     color:white;
@@ -56,62 +85,73 @@ button{
     border:none;
     border-radius:50px;
     cursor:pointer;
-    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    box-shadow:0 4px 15px rgba(0,0,0,0.4);
+    font-weight:600;
 }
+
 button:hover{
     background:#1ebc57;
 }
+
 footer{
     text-align:center;
-    padding:20px;
-    background:#111;
-    color:white;
+    padding:25px;
+    background:#000;
+    font-size:14px;
+    color:#aaa;
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Chifa Dragón Dorado</h1>
-    <p>Auténtico sabor oriental en Trujillo 🍜</p>
+    <h1>🍜 Chifa Dragón Dorado</h1>
+    <p>Auténtico sabor oriental en Trujillo</p>
 </header>
 
 <div class="section">
 
     <div class="category">
         <h2>🍚 Arroces</h2>
+
         <div class="item">
             <span>Arroz Chaufa Especial</span>
-            <span>S/ 22</span>
+            <span class="price">S/ 22</span>
         </div>
+
         <div class="item">
             <span>Arroz Chaufa con Pollo</span>
-            <span>S/ 18</span>
+            <span class="price">S/ 18</span>
         </div>
     </div>
 
     <div class="category">
         <h2>🥡 Tallarines</h2>
+
         <div class="item">
             <span>Tallarín Saltado de Pollo</span>
-            <span>S/ 20</span>
+            <span class="price">S/ 20</span>
         </div>
+
         <div class="item">
             <span>Tallarín con Carne</span>
-            <span>S/ 23</span>
+            <span class="price">S/ 23</span>
         </div>
     </div>
 
     <div class="category">
         <h2>🥤 Bebidas</h2>
+
         <div class="item">
             <span>Inca Kola 1L</span>
-            <span>S/ 8</span>
+            <span class="price">S/ 8</span>
         </div>
+
         <div class="item">
             <span>Chicha Morada</span>
-            <span>S/ 6</span>
+            <span class="price">S/ 6</span>
         </div>
     </div>
 
