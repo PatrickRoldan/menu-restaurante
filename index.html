@@ -4,136 +4,99 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chifa Dragón Dorado</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-    .card-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px;
-    cursor:pointer;
-    background:#1c1c1c;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
 }
 
-.card-info{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height 0.4s ease;
-    background:#161616;
-    padding:0 15px;
+header {
+    background: linear-gradient(45deg, #b30000, #ff0000);
+    padding: 30px;
+    text-align: center;
 }
 
-.card-info p{
-    font-size:14px;
-    color:#ccc;
+header h1 {
+    margin: 0;
+    font-size: 32px;
 }
 
-.card.active .card-info{
-    max-height:200px;
-    padding:15px;
-}
-body{
-    margin:0;
-    font-family:'Poppins', sans-serif;
-    background:#111;
-    color:white;
+header p {
+    margin-top: 10px;
+    font-size: 16px;
 }
 
-header{
-    text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url('https://images.unsplash.com/photo-1585032226651-759b368d7246');
-    background-size:cover;
-    background-position:center;
+.container {
+    padding: 20px;
 }
 
-header h1{
-    font-size:34px;
-    margin:0;
-    color:#FFD700;
+.card {
+    background: #1c1c1c;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: 0.3s;
 }
 
-.section{
-    padding:30px 20px;
-    max-width:900px;
-    margin:auto;
+.card:hover {
+    transform: scale(1.02);
 }
 
-.category{
-    margin-bottom:40px;
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-.category h2{
-    color:#FFD700;
-    border-left:5px solid #c62828;
-    padding-left:10px;
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
 }
 
-.card{
-    background:#1c1c1c;
-    border-radius:15px;
-    overflow:hidden;
-    margin:20px 0;
-    box-shadow:0 4px 15px rgba(0,0,0,0.4);
-    transition:0.3s;
+.price {
+    color: #ffcc00;
+    font-weight: bold;
 }
 
-.card:hover{
-    transform:scale(1.02);
+.card-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
 }
 
-.card img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
+.card.active .card-info {
+    max-height: 200px;
+    padding-bottom: 15px;
 }
 
-.card-content{
-    padding:15px;
+button {
+    width: 100%;
+    padding: 15px;
+    background: #25D366;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
-.card-content h3{
-    margin:0;
-    color:#FFD700;
+button:hover {
+    background: #1ebe5d;
 }
 
-.card-content p{
-    font-size:14px;
-    color:#ccc;
-    margin:8px 0;
-}
-
-.price{
-    font-weight:700;
-    font-size:18px;
-}
-
-button{
-    position:fixed;
-    bottom:20px;
-    left:50%;
-    transform:translateX(-50%);
-    width:90%;
-    max-width:500px;
-    padding:18px;
-    background:#25D366;
-    color:white;
-    font-size:18px;
-    border:none;
-    border-radius:50px;
-    cursor:pointer;
-    box-shadow:0 4px 15px rgba(0,0,0,0.4);
-    font-weight:600;
-}
-
-footer{
-    text-align:center;
-    padding:25px;
-    background:#000;
-    font-size:14px;
-    color:#aaa;
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    margin-top: 40px;
 }
 </style>
 </head>
@@ -141,64 +104,63 @@ footer{
 <body>
 
 <header>
-    <h1>🍜 Chifa Dragón Dorado</h1>
-    <p>Auténtico sabor oriental en Trujillo</p>
+    <h1>Chifa Dragón Dorado</h1>
+    <p>Auténtico sabor oriental en cada plato 🍜</p>
 </header>
 
-<div class="section">
+<div class="container">
 
-    <div class="category">
-        <h2>🍚 Arroces</h2>
-
-        <div class="card">
-    <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80">
-    
-    <div class="card-header" onclick="toggleInfo(this)">
-        <h3>Arroz Salteado al wok</h3>
-        <span class="price">S/ 22</span>
-    </div>
-
-    <div class="card-info">
-        <p><strong>Descripción:</strong> Salteado al wok con pollo, chancho y verduras frescas.</p>
-        <p><strong>Ingredientes:</strong> Arroz jazmín, sillao, huevo, cebolla china, pollo, chancho.</p>
-    </div>
-</div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80">
-            <div class="card-content">
-                <h3>Arroz Chaufa con Pollo</h3>
-                <p>Clásico arroz oriental con trozos jugosos de pollo.</p>
-                <div class="price">S/ 18</div>
-            </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1627308595171-d1b5d2e38a45?auto=format&fit=crop&w=800&q=80">
+        <div class="card-header" onclick="toggleInfo(this)">
+            <h3>Arroz Chaufa Especial</h3>
+            <span class="price">S/ 22</span>
         </div>
-
+        <div class="card-info">
+            <p><strong>Descripción:</strong> Salteado al wok con pollo, chancho y tortilla de huevo.</p>
+            <p><strong>Ingredientes:</strong> Arroz jazmín, sillao, huevo, cebolla china, pollo y chancho.</p>
+        </div>
     </div>
 
-</div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80">
+        <div class="card-header" onclick="toggleInfo(this)">
+            <h3>Tallarín Saltado de Pollo</h3>
+            <span class="price">S/ 20</span>
+        </div>
+        <div class="card-info">
+            <p><strong>Descripción:</strong> Fideos chinos salteados con pollo jugoso y verduras frescas.</p>
+            <p><strong>Ingredientes:</strong> Fideos chinos, sillao, pollo, cebolla y pimiento.</p>
+        </div>
+    </div>
 
-<button onclick="window.location.href='https://wa.me/51999999999'">
-    📲 Hacer Pedido por WhatsApp
-</button>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1604908176997-4313f9c0c2c4?auto=format&fit=crop&w=800&q=80">
+        <div class="card-header" onclick="toggleInfo(this)">
+            <h3>Pollo Tipakay</h3>
+            <span class="price">S/ 24</span>
+        </div>
+        <div class="card-info">
+            <p><strong>Descripción:</strong> Crujiente pollo bañado en salsa agridulce especial.</p>
+            <p><strong>Ingredientes:</strong> Pollo empanizado, salsa agridulce, piña y ajonjolí.</p>
+        </div>
+    </div>
+
+    <button onclick="window.location.href='https://wa.me/51922624926'">
+        Hacer Pedido por WhatsApp
+    </button>
+
+</div>
 
 <footer>
-    📍 Trujillo, La Libertad  
-    🕒 Abierto todos los días 12pm - 10pm
+    © 2026 Chifa Dragón Dorado - Trujillo
 </footer>
 
-    <script>
+<script>
 function toggleInfo(element){
     element.parentElement.classList.toggle("active");
 }
 </script>
-    
+
 </body>
 </html>
-
-
-
-
-
-
-
-
