@@ -7,7 +7,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 body{
     margin:0;
     font-family:'Poppins', sans-serif;
@@ -28,24 +27,16 @@ header h1{
     font-size:34px;
     margin:0;
     color:#FFD700;
-    animation:fadeDown 1s ease;
-}
-
-header p{
-    font-size:18px;
-    margin-top:10px;
-    animation:fadeUp 1.2s ease;
 }
 
 .section{
     padding:30px 20px;
-    max-width:800px;
+    max-width:900px;
     margin:auto;
 }
 
 .category{
     margin-bottom:40px;
-    animation:fadeUp 1s ease;
 }
 
 .category h2{
@@ -54,26 +45,43 @@ header p{
     padding-left:10px;
 }
 
-.item{
+.card{
     background:#1c1c1c;
-    margin:12px 0;
-    padding:18px;
     border-radius:15px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    overflow:hidden;
+    margin:20px 0;
+    box-shadow:0 4px 15px rgba(0,0,0,0.4);
     transition:0.3s;
-    animation:fadeUp 1.2s ease;
 }
 
-.item:hover{
-    transform:scale(1.03);
-    background:#222;
+.card:hover{
+    transform:scale(1.02);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card-content h3{
+    margin:0;
+    color:#FFD700;
+}
+
+.card-content p{
+    font-size:14px;
+    color:#ccc;
+    margin:8px 0;
 }
 
 .price{
-    color:#FFD700;
-    font-weight:600;
+    font-weight:700;
+    font-size:18px;
 }
 
 button{
@@ -92,11 +100,6 @@ button{
     cursor:pointer;
     box-shadow:0 4px 15px rgba(0,0,0,0.4);
     font-weight:600;
-    animation:pulse 2s infinite;
-}
-
-button:hover{
-    background:#1ebc57;
 }
 
 footer{
@@ -106,37 +109,6 @@ footer{
     font-size:14px;
     color:#aaa;
 }
-
-/* ANIMACIONES */
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(20px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-@keyframes fadeDown{
-    from{
-        opacity:0;
-        transform:translateY(-20px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-@keyframes pulse{
-    0%{transform:translateX(-50%) scale(1);}
-    50%{transform:translateX(-50%) scale(1.05);}
-    100%{transform:translateX(-50%) scale(1);}
-}
-
 </style>
 </head>
 
@@ -152,43 +124,24 @@ footer{
     <div class="category">
         <h2>🍚 Arroces</h2>
 
-        <div class="item">
-            <span>Arroz Chaufa Especial</span>
-            <span class="price">S/ 22</span>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604908176997-4313f9c0c2c4">
+            <div class="card-content">
+                <h3>Arroz Chaufa Especial</h3>
+                <p>Salteado al wok con pollo, chancho, huevo y verduras frescas.</p>
+                <div class="price">S/ 22</div>
+            </div>
         </div>
 
-        <div class="item">
-            <span>Arroz Chaufa con Pollo</span>
-            <span class="price">S/ 18</span>
-        </div>
-    </div>
-
-    <div class="category">
-        <h2>🥡 Tallarines</h2>
-
-        <div class="item">
-            <span>Tallarín Saltado de Pollo</span>
-            <span class="price">S/ 20</span>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+            <div class="card-content">
+                <h3>Arroz Chaufa con Pollo</h3>
+                <p>Clásico arroz oriental con trozos jugosos de pollo.</p>
+                <div class="price">S/ 18</div>
+            </div>
         </div>
 
-        <div class="item">
-            <span>Tallarín con Carne</span>
-            <span class="price">S/ 23</span>
-        </div>
-    </div>
-
-    <div class="category">
-        <h2>🥤 Bebidas</h2>
-
-        <div class="item">
-            <span>Inca Kola 1L</span>
-            <span class="price">S/ 8</span>
-        </div>
-
-        <div class="item">
-            <span>Chicha Morada</span>
-            <span class="price">S/ 6</span>
-        </div>
     </div>
 
 </div>
@@ -204,4 +157,5 @@ footer{
 
 </body>
 </html>
+
 
